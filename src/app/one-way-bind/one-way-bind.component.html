@@ -5,6 +5,7 @@
     <div class="col">
       <!-- using one way binding -->
       <img [alt]="imageALT" [title]="imageTooltip" [src]="imageURL" />
+      <br>
       <button [disabled]="buttonDisabled" class="mt-2 btn btn-primary">
         {{ buttonPrompt }}
       </button>
@@ -12,15 +13,9 @@
 
     <div class="col">
       <!-- using value interpolation -->
-      <img
-        alt="{{ imageALT }}"
-        title="{{ imageTooltip }}"
-        src="{{ imageURL }}"
-      />
-      <button
-        disabled="{{ buttonDisabled ? 'disabled' : null }}"
-        class="mt-2 btn btn-primary"
-      >
+      <img alt="{{ imageALT }}" title="{{ imageTooltip }}" src="{{ imageURL }}" />
+      <br>
+      <button disabled="{{ buttonDisabled ? 'disabled' : null }}" class="mt-2 btn btn-primary">
         {{ buttonPrompt }}
       </button>
     </div>

@@ -1,0 +1,30 @@
+<div class="border border-2 border-secondary">
+    <div class="bg-info text-center">component-input.component</div>
+
+    <div class="p-2">
+        <app-simple-table0 [userData]="userData"></app-simple-table0>
+    </div>
+
+    <div class="row">
+        <div class="col m-2">
+            <button (click)="sortByAgeDesc()" class="btn btn-primary btn-sm">
+                Age descending
+            </button>
+        </div>
+        <div class="col m-2">
+            <button (click)="sortByAgeAsc()" class="btn btn-primary btn-sm">
+                Age ascending
+            </button>
+        </div>
+        <div class="col m-2">
+            <button (click)="sortByAgeDescLastDesc()" class="btn btn-primary btn-sm">
+                Age-Lastname descending
+            </button>
+        </div>
+    </div>
+    <div class="col m-2">
+        <button (click)="resetData()" class="btn btn-danger">
+            Reset
+        </button>
+    </div>
+</div>
