@@ -22,11 +22,15 @@ export class ComponentInputOutputComponent {
     { firstname:"Markos",     lastname:"Klapsomounis",  age:44 },
     { firstname:"Pikachu",    lastname:"Malakas",       age:10 }
   ]
+  receivedUser: User | undefined;
 
   onDeleteUser(index: number) {
     console.log(index);
     this.userData.splice(index, 1)
   }
 
+onReceivedUser(user: User){
+  this.receivedUser = user;
+}
 
 }

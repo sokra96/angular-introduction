@@ -8,10 +8,15 @@ import { User } from '../component-input-output.component';
 export class SimpleTable1Component {
   @Input() userData: User[] = []
   @Output() deleteUser = new EventEmitter<number>
+  @Output() sendUser = new EventEmitter<User>
 
   onDeleteUser(i: number) {
     this.deleteUser.emit(i);
 
+  }
+
+  onSendUserButtonClick(user:User){
+    this.sendUser.emit(user)
   }
 }
 
